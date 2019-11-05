@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Aleksander Tkachuk](https://up.htmlacademy.ru/adaptive/18/user/185217).
-* Наставник: `Неизвестно`.
+* Наставник: `Кексобот`.
 
 ---
 
