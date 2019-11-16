@@ -298,5 +298,22 @@
       </div>
     </footer>
 
+    <div class="overlay overlay--show visually-hidden">
+      <section class="modal modal--show">
+        <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+          <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
+          <p class="modal__choose">Выберите размер:</span>
+          <div class="modal__size">
+            <input class="modal__input visually-hidden" type="radio" name="size" id="S-size" value="S" checked>
+            <label class="modal__label"  for="S-size">S</label>
+            <input class="modal__input visually-hidden" type="radio" name="size" id="M-size" value="M">
+            <label class="modal__label"  for="M-size">M</label>
+            <input class="modal__input visually-hidden" type="radio" name="size" id="L-size" value="L">
+            <label class="modal__label"  for="L-size">L</label>
+          </div>
+          <button class="modal__add button button--green" type="submit">Добавить</button>
+        </form>
+      </section>
+    </div>
   </body>
 </html>

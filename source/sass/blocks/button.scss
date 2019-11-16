@@ -9,6 +9,8 @@
   padding-top: 18px;
   padding-bottom: 18px;
   transition: 0.3s ease;
+  background-color: #ffffff;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -19,3 +21,15 @@
 .button:active {
   color: rgba($color: #ffffff, $alpha: 0.3);
 }
+
+.button--green {
+  color: #ffffff;
+  background-color: #63d1bb;
+  border: 0;
+}
+
+.button--green:hover {
+  background-color: #46c1ae;
+}
+
+
