@@ -1,0 +1,21 @@
+.button {
+  border: 2px solid #444444;
+  text-align: center;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #444444;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  transition: 0.3s ease;
+}
+
+.button:hover {
+  color: #ffffff;
+  background-color: #444444;
+}
+
+.button:active {
+  color: rgba($color: #ffffff, $alpha: 0.3);
+}
