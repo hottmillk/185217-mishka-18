@@ -1,0 +1,237 @@
+.form__wrapper {
+  padding-bottom: 10px;
+}
+
+.form__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__title {
+  display: flex;
+  flex-grow: 0;
+  margin-bottom: 24px;
+  color: #63d1bb;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 16px;
+}
+
+.form__title::after {
+  content: "";
+  align-self: center;
+  flex-grow: 2;
+  height: 1px;
+  width: 5px;
+  background-color: #63d1bb;
+  margin-left: 20px;
+}
+
+.form__fieldset-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__checkbox-label,
+.form__label,
+.form__radio-label {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+  cursor: pointer;
+}
+
+.form__radio-label,
+.form__checkbox-label {
+  position: relative;
+  box-sizing: border-box;
+  min-height: 38px;
+  padding-top: 12px;
+  padding-left: 62px;
+}
+
+.form__radio-label::before,
+.form__checkbox-label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 37px;
+  height: 37px;
+  border: 2px solid #444444;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+}
+
+.form__checkbox-label {
+  margin-bottom: 23px;
+}
+
+.form__radio-label {
+  margin-bottom: 12px;
+}
+
+.form__radio-label::before {
+  border-radius: 50%;
+}
+
+.form__radio-label::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 16.5px;
+  height: 16.5px;
+  background-color: #62d1ba;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.form__radio-label:hover.form__radio-label::before,
+.form__checkbox-label:hover.form__checkbox-label::before {
+  border-color: #62d1ba;
+}
+
+.form__radio-label:active.form__radio-label::before,
+.form__checkbox-label:active.form__checkbox-label::before {
+  border-color: rgba($color: #444444, $alpha: 0.3);
+}
+
+.form__radio-label:active.form__radio-label::after {
+  opacity: 1;
+}
+
+.form__input:checked + .form__radio-label::after,
+.form__input:checked + .form__checkbox-label::after {
+  opacity: 1;
+}
+
+.form__checkbox-label::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  width: 18px;
+  height: 8px;
+  border: 2px solid #444444;
+  border-top-style: none;
+  border-right-style: none;
+  border-radius: 1px;
+  opacity: 0;
+  transform: rotate(-45deg);
+}
+
+.form__radio-label:last-of-type {
+  margin-bottom: 22px;
+}
+
+.form__title--name {
+  margin-bottom: 30px;
+}
+
+.form__field-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__label {
+  margin-bottom: 2px;
+}
+
+.form__field {
+  font-size: 17px;
+  line-height: 18px;
+  box-sizing: border-box;
+  padding-top: 5px;
+  padding-right: 46px;
+  padding-bottom: 7px;
+  margin-bottom: 25px;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #000000;
+  transition: border-color 0.3s ease;
+}
+
+.form__field::placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.form__title--phone,
+.form__title--email,
+.form__title--textarea {
+  cursor: pointer;
+}
+
+.form__title--phone,
+.form__title--email {
+  margin-bottom: 8px;
+}
+
+.form__input-wrapper {
+  position: relative;
+}
+
+.form__icon {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  fill: #c1c1c1;
+  transition: fill 0.3s ease;
+}
+
+.form__icon--phone {
+  width: 25px;
+  height: 25px;
+}
+
+.form__icon--email {
+  width: 32px;
+  height: 32px;
+}
+
+.form__textarea {
+  box-sizing: border-box;
+  font-family: "Open Sans", "Arial", sans-serif;
+  height: 140px;
+  font-size: 17px;
+  line-height: 18px;
+  padding: 13px 16px;
+  border: 2px solid #000000;
+  outline: 0;
+  transition: border-color 0.3s ease;
+}
+
+.form__textarea::placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.form__note {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form__send {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.form__field:hover,
+.form__textarea:hover {
+  border-color: #62d1ba;
+}
+
+.form__field:focus,
+.form__textarea:focus {
+  border-color: #62d1ba;
+}
+
+.form__field:hover + .form__icon {
+  fill: #62d1ba;
+}
+
+.form__field:active + .form__icon {
+  fill: #62d1ba;
+}
