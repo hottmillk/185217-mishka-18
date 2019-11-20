@@ -1,0 +1,34 @@
+.copyright__link {
+  min-height: 80px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 182px;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #000000;
+}
+
+.copyright__link,
+.copyright__icon {
+  transition: 0.3s ease;
+}
+
+.copyright__icon {
+  fill: #63d1bb;
+}
+
+.copyright__link:hover .copyright__icon {
+  fill: #46c1ae;
+}
+
+.copyright__link:active {
+  color: rgba($color: #000000, $alpha: 0.3);
+}
+
+.copyright__link:active .copyright__icon {
+  opacity: 0.3;
+}
