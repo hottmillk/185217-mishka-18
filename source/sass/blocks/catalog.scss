@@ -10,3 +10,18 @@
 .catalog__item {
   margin-bottom: 30px;
 }
+
+// tablet
+@media only screen and (min-width: 768px) {
+  .catalog {
+    margin-top: 80px;
+  }
+
+  .catalog__wrapper {
+    width: 668px;
+  }
+
+  .catalog__item {
+    margin-bottom: 50px;
+  }
+}

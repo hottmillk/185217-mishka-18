@@ -36,9 +36,6 @@
   margin-bottom: 25px;
 }
 
-.production__video img {
-  display: block;
-}
 
 .production__content {
   padding-right: 34px;
@@ -63,4 +60,46 @@
 
 .production__wrapper:active {
   box-shadow: 0 3px 5px 0 rgba($color: #000000, $alpha: 0.1);
+}
+
+// tablet
+@media only screen and (min-width: 768px) {
+  .production {
+    margin-bottom: 65px;
+  }
+
+  .production__wrapper {
+    width: 668px;
+  }
+
+  .production__title {
+    font-size: 20px;
+    padding-left: 108px;
+    margin-bottom: 7px;
+  }
+
+  .production__icon {
+    top: 20px;
+    left: 42px;
+  }
+
+  .production__video {
+    order: -1;
+    margin-bottom: 13px;
+  }
+
+  .production__content {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .production__description {
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 35px;
+  }
+
+  .production__order {
+    margin-bottom: 45px;
+  }
 }
