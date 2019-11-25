@@ -47,3 +47,10 @@
     margin-left: auto;
   }
 }
+
+// desktop
+@media only screen and (min-width: 1150px) {
+  .page-footer__wrapper {
+    width: 1050px;
+  }
+}

@@ -169,3 +169,39 @@
     width: 173px;
   }
 }
+
+// desktop
+@media only screen and (min-width: 1150px) {
+  .reviews {
+    width: 1050px;
+    padding-bottom: 90px;
+    background-size: 1050px 23px;
+  }
+
+  .reviews__wrapper {
+    width: 1050px;
+    padding-top: 70px;
+    padding-right: 0;
+    padding-left: 175px;
+  }
+
+  .reviews__title {
+    font-size: 53px;
+    line-height: 57px;
+    width: 525px;
+  }
+
+  .reviews__text {
+    width: 800px;
+    margin-bottom: 40px;
+  }
+
+  .reviews__toogles {
+    right: 0;
+    bottom: 100px;
+  }
+
+  .reviews__add-review {
+    margin-top: 8px;
+  }
+}

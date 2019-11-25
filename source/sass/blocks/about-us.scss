@@ -127,3 +127,27 @@
     order: 6;
   }
 }
+
+// desktop
+@media only screen and (min-width: 1150px) {
+  .about-us {
+    margin-bottom: 68px;
+  }
+
+  .about-us__wrapper {
+    box-sizing: border-box;
+    width: 1050px;
+    padding-right: 0;
+    padding-left: 175px;
+  }
+
+  .about-us__title {
+    font-size: 53px;
+    line-height: 57px;
+    padding-top: 20px;
+  }
+
+  .about-us__list {
+    width: 700px;
+  }
+}

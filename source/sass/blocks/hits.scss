@@ -58,7 +58,8 @@
   margin-bottom: 25px;
 }
 
-.hits__img--tablet {
+.hits__img--tablet,
+.hits__img--desktop {
   display: none;
 }
 
@@ -130,7 +131,8 @@
     margin-bottom: 56px;
   }
 
-  .hits__img--mobile {
+  .hits__img--mobile,
+  .hits__img--desktop {
     display: none;
   }
 
@@ -151,5 +153,66 @@
 
   .hits__buy-button {
     margin-bottom: 69px;
+  }
+}
+
+// desktop
+@media only screen and (min-width: 1150px) {
+  .hits {
+    margin-top: 70px;
+  }
+
+  .hits__wrapper {
+    box-sizing: border-box;
+    width: 1050px;
+    padding: 0;
+    background-size: 1050px 23px;
+  }
+
+  .hits__title {
+    font-size: 53px;
+    line-height: 53px;
+    z-index: 5;
+    width: 860px;
+    margin-top: 55px;
+  }
+
+  .hits__type {
+    order: -1;
+    padding-right: 0;
+    padding-left: 47px;
+    margin-top: 70px;
+    margin-right: 53px;
+  }
+
+  .hits__info {
+    margin-left: 175px;
+  }
+
+  .hits__description {
+    margin-bottom: 48px;
+  }
+
+  .hits__table {
+    margin-bottom: 110px;
+  }
+
+  .hits__img--mobile,
+  .hits__img--tablet {
+    display: none;
+  }
+
+  .hits__img--desktop {
+    display: block;
+    width: 525px;
+    margin-top: -167px;
+  }
+
+  .hits__buy {
+    margin-left: 175px;
+  }
+
+  .hits__buy-button {
+    margin-bottom: 96px;
   }
 }
