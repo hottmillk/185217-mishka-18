@@ -36,3 +36,21 @@
     margin-bottom: 8px;
   }
 }
+
+// desktop
+@media only screen and (min-width: 1150px) {
+  .order {
+    margin-top: 122px;
+  }
+
+  .order__content {
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .order__description {
+    padding-right: 175px;
+    padding-left: 175px;
+    margin-bottom: 7px;
+  }
+}

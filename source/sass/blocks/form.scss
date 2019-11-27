@@ -343,6 +343,27 @@
     width: 233px;
     margin-top: 0;
   }
+
+  .form__radio-label::before,
+  .form__checkbox-label::before {
+    width: 50px;
+    height: 50px;
+  }
+
+  .form__radio-label::after {
+    top: 16px;
+    left: 16px;
+    width: 22px;
+    height: 22px;
+  }
+
+  .form__checkbox-label::after {
+    left: 16px;
+    left: 13px;
+    width: 28px;
+    height: 13px;
+    border-width: 3px;
+  }
 }
 
 // tablet and desktop
@@ -353,5 +374,48 @@
 
   .form__checkbox-label:nth-of-type(odd) {
     margin-right: 25px;
+  }
+}
+
+// desktop
+@media only screen and (min-width: 1150px) {
+  .form__fieldset {
+    width: 1050px;
+  }
+
+  .form__title {
+    box-sizing: border-box;
+    width: 175px;
+    padding-left: 60px;
+  }
+
+  .form__checkbox-label {
+    width: 262px;
+  }
+
+  .form__field-wrapper {
+    width: 700px;
+  }
+
+  .form__field {
+    width: 700px;
+    padding-right: 46px;
+  }
+
+  .form__input-wrapper {
+    width: 700px;
+  }
+
+  .form__icon {
+    right: 3px;
+  }
+
+  .form__textarea {
+    width: 700px;
+  }
+
+  .form__footer {
+    width: 700px;
+    margin: 20px auto 0;
   }
 }
