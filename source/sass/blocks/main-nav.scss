@@ -15,29 +15,34 @@
   transition: opacity 0.3s ease-in;
 }
 
-.main-nav__logo-image {
+.main-nav__logo-image--mobile {
   display: block;
   margin: 0 auto;
+}
+
+.main-nav__logo-image--tablet,
+.main-nav__logo-image--desktop {
+  display: none;
 }
 
 .main-nav__toogle {
   content: "";
   display: block;
   position: absolute;
-  top: 10px;
+  top: 7px;
   right: 29px;
   width: 24px;
   height: 24px;
   background-color: transparent;
-  background-image: url("../img/icon-menu-open.svg");
+  background-image: url("../img/icon-menu-close.svg");
   background-repeat: no-repeat;
   background-position: 1px 1px;
   border: 0;
 }
 
-input[type="checkbox"]:checked + .main-nav__toogle {
-  background-image: url("../img/icon-menu-close.svg");
-  top: 7px;
+.main-nav--closed .main-nav__toogle {
+  background-image: url("../img/icon-menu-open.svg");
+  background-position: center;
 }
 
 .main-nav__logo:hover {
@@ -48,10 +53,63 @@ input[type="checkbox"]:checked + .main-nav__toogle {
   opacity: 0.3;
 }
 
-.main-nav__list {
-  display: none;
+// mobile
+@media only screen and (max-width: 768px) {
+  .main-nav__logo-image--tablet {
+    display: none;
+  }
+}
+// tablet
+@media only screen and (min-width: 768px) {
+  .main-nav__logo-image--tablet {
+    display: block;
+  }
+
+  .main-nav__logo-image--mobile,
+  .main-nav__logo-image--desktop {
+    display: none;
+  }
+
+  .main-nav {
+    height: 148px;
+  }
+
+  .main-nav__wrapper {
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  .main-nav__logo {
+    align-self: flex-start;
+  }
+
+  .main-nav__toogle {
+    display: none;
+  }
 }
 
-input[type="checkbox"]:checked ~ .main-nav__list {
-  display: block;
+// desktop
+@media only screen and (min-width: 1150px) {
+  .main-nav__wrapper {
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .main-nav__logo-image--desktop {
+    display: block;
+  }
+
+  .main-nav__logo-image--mobile,
+  .main-nav__logo-image--tablet {
+    display: none;
+  }
+
+  .main-nav__logo {
+    order: 2;
+    margin-top: 9px;
+  }
 }

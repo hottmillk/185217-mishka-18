@@ -84,3 +84,78 @@
 .item__basket:active .item__icon {
   fill: rgba($color: #63d1bb, $alpha: 0.3);
 }
+
+.item__image--tablet,
+.item__image--desktop {
+  display: none;
+}
+
+// tablet
+@media only screen and (min-width: 768px) {
+  .item {
+    flex-direction: row;
+  }
+
+  .item__image--tablet {
+    display: block;
+  }
+
+  .item__image--mobile,
+  .item__image--desktop {
+    display: none;
+  }
+
+  .item__wrapper {
+    padding-right: 30px;
+  }
+
+  .item__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .item__parameters {
+    font-size: 15px;
+  }
+
+  .item__price {
+    font-size: 17px;
+  }
+}
+
+// tablet and desktop
+@media only screen and (max-width: 1149px) and (min-width: 768px) {
+  .item__wrapper {
+    width: 50%;
+  }
+
+  .item__price {
+    padding-left: 3px;
+  }
+
+  .item__img-link {
+    width: 334px;
+  }
+}
+
+// desktop
+@media only screen and (min-width: 1150px) {
+  .item {
+    flex-direction: column;
+    width: 316px;
+    margin-right: 51px;
+  }
+
+  .item:nth-of-type(3n) {
+    margin-right: 0;
+  }
+
+  .item__image--desktop {
+    display: block;
+  }
+
+  .item__image--mobile,
+  .item__image--tablet {
+    display: none;
+  }
+}

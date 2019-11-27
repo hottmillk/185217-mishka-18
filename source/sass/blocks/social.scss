@@ -25,3 +25,11 @@
 .social__link:active .social__icon {
   opacity: 0.3;
 }
+
+// tablet
+@media only screen and (min-width: 768px) {
+  .social__list {
+    justify-content: flex-start;
+    min-height: 80px;
+  }
+}

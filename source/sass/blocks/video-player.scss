@@ -39,3 +39,41 @@
 .item__wrapper:active {
   box-shadow: 0 3px 5px 0 rgba($color: #000000, $alpha: 0.1);
 }
+
+.video-player__image--tablet,
+.video-player__image--desktop {
+  display: none;
+}
+
+// tablet
+@media only screen and (min-width: 768px) {
+  .video-player {
+    width: 668px;
+    height: 455px;
+  }
+
+  .video-player__image--tablet {
+    display: block;
+  }
+
+  .video-player__image--mobile,
+  .video-player__image--desktop {
+    display: none;
+  }
+}
+
+// desktop
+@media only screen and (min-width: 1150px) {
+  .video-player {
+    width: 682px;
+  }
+
+  .video-player__image--desktop {
+    display: block;
+  }
+
+  .video-player__image--mobile,
+  .video-player__image--tablet {
+    display: none;
+  }
+}
