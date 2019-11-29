@@ -125,6 +125,12 @@
     background-position: 0 0;
   }
 
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .reviews__wrapper {
+      background-image: url("../img/review@2x.jpg");
+    }
+  }
+
   .reviews__title {
     font-size: 43px;
     line-height: 50px;

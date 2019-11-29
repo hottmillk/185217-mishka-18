@@ -24,6 +24,13 @@
   background-repeat: no-repeat;
 }
 
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .page-header__content--main {
+    background-image: url("../../img/hero-mobile@2x.jpg");
+  }
+}
+
+
 .page-header__title {
   width: 255px;
   margin: 70px auto 40px;

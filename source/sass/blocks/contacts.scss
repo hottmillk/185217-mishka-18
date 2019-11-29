@@ -55,11 +55,6 @@
   background-color: #e9e2d7;
 }
 
-.contacts__map-img--tablet,
-.contacts__map-img--desktop {
-  display: none;
-}
-
 .contacts__write-us {
   display: block;
   width: 260px;
@@ -115,15 +110,6 @@
     margin-bottom: 55px;
   }
 
-  .contacts__map-img--mobile,
-  .contacts__map-img--desktop {
-    display: none;
-  }
-
-  .contacts__map-img--tablet {
-    display: block;
-  }
-
   .contacts__write-us {
     width: 230px;
   }
@@ -166,15 +152,6 @@
     width: 525px;
     margin-bottom: 0;
     background-image: url("../img/map-desktop@1x.jpg");
-  }
-
-  .contacts__map-img--mobile,
-  .contacts__map-img--tablet {
-    display: none;
-  }
-
-  .contacts__map-img--desktop {
-    display: block;
   }
 
   .contacts__write-us {
