@@ -58,11 +58,6 @@
   margin-bottom: 25px;
 }
 
-.hits__img--tablet,
-.hits__img--desktop {
-  display: none;
-}
-
 .hits__buy {
   display: flex;
   flex-direction: column;
@@ -131,15 +126,6 @@
     margin-bottom: 56px;
   }
 
-  .hits__img--mobile,
-  .hits__img--desktop {
-    display: none;
-  }
-
-  .hits__img--tablet {
-    display: block;
-  }
-
   .hits__buy {
     width: 291px;
     margin-top: -160px;
@@ -197,13 +183,7 @@
     margin-bottom: 110px;
   }
 
-  .hits__img--mobile,
-  .hits__img--tablet {
-    display: none;
-  }
-
-  .hits__img--desktop {
-    display: block;
+  .hits__img {
     width: 525px;
     margin-top: -167px;
   }
