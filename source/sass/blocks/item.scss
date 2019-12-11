@@ -2,11 +2,11 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  border: 1px solid #ececec;
+  border: 1px solid $border-gray;
 }
 
 .item__img-link {
-  background-color: #f1f1f1;
+  background-color: $light-gray;
   line-height: 0;
 }
 
@@ -28,7 +28,7 @@
 
 .item__title-link {
   display: block;
-  color: #000000;
+  color: $titles-color;
   padding-top: 27px;
   padding-bottom: 7px;
   transition: color 0.3s ease;
@@ -44,7 +44,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-top: 1px solid #ececec;
+  border-top: 1px solid $border-gray;
   min-height: 65px;
   margin-top: auto;
 }
@@ -52,41 +52,41 @@
 .item__price {
   font-size: 15px;
   line-height: 24px;
-  color: #000000;
+  color: $titles-color;
   font-weight: 700;
 }
 
 .item__icon {
-  fill: rgba($color: #000000, $alpha: 0.2);
+  fill: rgba($black, 0.2);
   transition: fill 0.3s ease;
 }
 
 .item__wrapper:hover {
-  box-shadow: 0 6px 10px 0 rgba($color: #000000, $alpha: 0.1);
+  box-shadow: 0 6px 10px 0 rgba($black, 0.1);
 }
 
 .item__wrapper:active {
-  box-shadow: 0 3px 5px 0 rgba($color: #000000, $alpha: 0.1);
+  box-shadow: 0 3px 5px 0 rgba($black, 0.1);
 }
 
 .item__title-link:hover {
-  color: rgba($color: #000000, $alpha: 0.6);
+  color: $link-color--hover;
 }
 
 .item__title-link:active {
-  color: rgba($color: #000000, $alpha: 0.3);
+  color: $link-color--active;
 }
 
 .item__basket:hover .item__icon {
-  fill: #63d1bb;
+  fill: $green;
 }
 
 .item__basket:active .item__icon {
-  fill: rgba($color: #63d1bb, $alpha: 0.3);
+  fill: rgba($green, 0.3);
 }
 
 // tablet
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .item {
     flex-direction: row;
   }
@@ -110,7 +110,7 @@
 }
 
 // tablet and desktop
-@media only screen and (max-width: 1149px) and (min-width: 768px) {
+@media (max-width: 1149px) and (min-width: 768px) {
   .item__wrapper {
     width: 50%;
   }
@@ -125,7 +125,7 @@
 }
 
 // desktop
-@media only screen and (min-width: 1150px) {
+@media (min-width: 1150px) {
   .item {
     flex-direction: column;
     width: 316px;

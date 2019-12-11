@@ -13,7 +13,7 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
-  color: #000000;
+  color: $titles-color;
   margin-bottom: 27px;
 }
 
@@ -34,7 +34,7 @@
 
 .contacts__value--link {
   position: relative;
-  color: #444444;
+  color: $text-color;
   transition: 0.3s ease;
 }
 
@@ -45,7 +45,7 @@
   left: 0;
   width: 100%;
   height: 1px;
-  background-color: #63d1bb;
+  background-color: $green;
 }
 
 .contacts__map {
@@ -62,7 +62,7 @@
 }
 
 .contacts__value--link:hover {
-  color: #46c1ae;
+  color: $link-green;
 }
 
 .contacts__value--link:active {
@@ -70,7 +70,7 @@
 }
 
 // tablet
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .contacts__wrapper {
     display: flex;
     align-items: flex-start;
@@ -116,7 +116,7 @@
 }
 
 // desktop
-@media only screen and (min-width: 1150px) {
+@media (min-width: 1150px) {
   .contacts {
     display: flex;
     flex-wrap: wrap;

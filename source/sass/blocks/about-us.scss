@@ -12,7 +12,7 @@
   font-size: 25px;
   font-weight: 700;
   line-height: 30px;
-  color: #000000;
+  color: $titles-color;
   margin-bottom: 2px;
 }
 
@@ -31,7 +31,7 @@
 
 .about-us__icon {
   position: absolute;
-  fill: #63d1bb;
+  fill: $green;
 }
 
 .about-us__icon-eco {
@@ -75,7 +75,7 @@
 }
 
 // tablet
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .about-us {
     margin-bottom: 60px;
   }
@@ -129,7 +129,7 @@
 }
 
 // desktop
-@media only screen and (min-width: 1150px) {
+@media (min-width: 1150px) {
   .about-us {
     margin-bottom: 68px;
   }

@@ -13,9 +13,9 @@
   padding-left: 76px;
   padding-top: 28px;
   padding-bottom: 26px;
-  color: #000000;
+  color: $black;
   transition: opacity 0.3s ease;
-  border-top: 1px solid #ececec;
+  border-top: 1px solid $border-gray;
 }
 
 .site-list__link:hover {
@@ -33,7 +33,7 @@
 
 
 // tablet
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .site-list {
     order: 3;
     display: flex;
@@ -53,7 +53,7 @@
 }
 
 // tablet and desktop
-@media only screen and (max-width: 1149px) and (min-width: 768px) {
+@media (max-width: 1149px) and (min-width: 768px) {
   .site-list__item:nth-of-type(odd) {
     margin-right: 24px;
   }
@@ -64,7 +64,7 @@
 }
 
 // desktop
-@media only screen and (min-width: 1150px) {
+@media (min-width: 1150px) {
   .site-list {
     order: 1;
     width: 430px;
@@ -79,7 +79,7 @@
   }
 
   .site-list__item:first-of-type {
-    border-right: 1px solid #ececec;
+    border-right: 1px solid $border-gray;
   }
 
   .site-list__link {

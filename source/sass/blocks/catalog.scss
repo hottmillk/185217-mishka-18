@@ -12,7 +12,7 @@
 }
 
 // tablet
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .catalog {
     margin-top: 80px;
   }
@@ -27,7 +27,7 @@
 }
 
 // desktop
-@media only screen and (min-width: 1150px) {
+@media (min-width: 1150px) {
   .catalog {
     margin-top: 128px;
   }

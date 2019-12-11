@@ -1,5 +1,5 @@
 .page-footer {
-  background-color: #f1f1f1;
+  background-color: $light-gray;
 }
 
 .page-footer__wrapper {
@@ -27,7 +27,7 @@
 }
 
 // tablet
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .page-footer__wrapper {
     flex-direction: row;
     width: 668px;
@@ -49,7 +49,7 @@
 }
 
 // desktop
-@media only screen and (min-width: 1150px) {
+@media (min-width: 1150px) {
   .page-footer__wrapper {
     width: 1050px;
   }
