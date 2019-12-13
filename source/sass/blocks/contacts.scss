@@ -117,12 +117,10 @@
 
 .contacts__map {
   margin: 0 auto 39px;
-  width: 320px;
   height: 457px;
   background-color: #e9e2d7;
 
   @media #{$tablet} {
-    width: 768px;
     margin-bottom: 55px;
   }
 

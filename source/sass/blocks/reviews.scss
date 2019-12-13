@@ -81,6 +81,7 @@
 }
 
 .reviews__item {
+  display: none;
   margin-bottom: 32px;
 
   @media #{$tablet} {
@@ -96,6 +97,10 @@
     display: flex;
     flex-direction: column;
   }
+}
+
+.reviews__toogle--disabled {
+  cursor: not-allowed;
 }
 
 .reviews__text {
@@ -182,7 +187,7 @@
 }
 
 .reviews__add-review {
-  display: block;
+  width: 100%;
 
   @media #{$tablet} {
     order: 2;
@@ -200,6 +205,10 @@
 
 .reviews__toogle:active::after {
   opacity: 0.3;
+}
+
+.reviews__toogle.reviews__toogle--disabled::after {
+  opacity: 0.2;
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
