@@ -1,11 +1,29 @@
 .main-nav {
   width: auto;
+
+  @media #{$tablet} {
+    height: 148px;
+  }
 }
 
 .main-nav__wrapper {
   position: relative;
   width: 320px;
   margin: 0 auto;
+
+  @media #{$tablet} {
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  @media #{$desktop} {
+    width: 1050px;
+    margin: 0 auto;
+  }
 }
 
 .main-nav__logo {
@@ -13,6 +31,15 @@
   margin-top: 22px;
   margin-bottom: 22px;
   transition: opacity 0.3s ease-in;
+
+  @media #{$tablet} {
+    align-self: flex-start;
+  }
+
+  @media #{$desktop} {
+    order: 2;
+    margin-top: 9px;
+  }
 }
 
 .main-nav__logo-image {
@@ -33,6 +60,10 @@
   background-repeat: no-repeat;
   background-position: 1px 1px;
   border: 0;
+
+  @media #{$tablet} {
+    display: none;
+  }
 }
 
 .main-nav--closed .main-nav__toogle {
@@ -46,43 +77,4 @@
 
 .main-nav__logo:active {
   opacity: 0.3;
-}
-
-// mobile
-
-// tablet
-@media (min-width: 768px) {
-  .main-nav {
-    height: 148px;
-  }
-
-  .main-nav__wrapper {
-    z-index: 10;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 668px;
-    margin: 0 auto;
-  }
-
-  .main-nav__logo {
-    align-self: flex-start;
-  }
-
-  .main-nav__toogle {
-    display: none;
-  }
-}
-
-// desktop
-@media (min-width: 1150px) {
-  .main-nav__wrapper {
-    width: 1050px;
-    margin: 0 auto;
-  }
-
-  .main-nav__logo {
-    order: 2;
-    margin-top: 9px;
-  }
 }

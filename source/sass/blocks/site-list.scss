@@ -2,6 +2,18 @@
   padding: 0;
   margin: 0;
   list-style: none;
+
+  @media #{$tablet} {
+    order: 3;
+    display: flex;
+    flex-wrap: wrap;
+    width: 310px;
+  }
+
+  @media #{$desktop} {
+    order: 1;
+    width: 430px;
+  }
 }
 
 .site-list__link {
@@ -16,6 +28,22 @@
   color: $black;
   transition: opacity 0.3s ease;
   border-top: 1px solid $border-gray;
+
+  @media #{$tablet} {
+    font-size: 15px;
+    line-height: 24px;
+    padding-left: 0;
+    padding-top: 18px;
+    padding-bottom: 0;
+    background-color: transparent;
+    border-top: 0;
+  }
+
+  @media #{$desktop} {
+    font-size: 17px;
+    padding-top: 30px;
+    padding-bottom: 35px;
+  }
 }
 
 .site-list__link:hover {
@@ -29,74 +57,46 @@
 .site-list__item--new,
 .site-list__item--sale {
   display: none;
-}
 
-
-// tablet
-@media (min-width: 768px) {
-  .site-list {
-    order: 3;
-    display: flex;
-    flex-wrap: wrap;
-    width: 310px;
-  }
-
-  .site-list__link {
-    font-size: 15px;
-    line-height: 24px;
-    padding-left: 0;
-    padding-top: 18px;
-    padding-bottom: 0;
-    background-color: transparent;
-    border-top: 0;
+  @media #{$desktop} {
+    display: block;
   }
 }
 
-// tablet and desktop
-@media (max-width: 1149px) and (min-width: 768px) {
-  .site-list__item:nth-of-type(odd) {
+.site-list__item:nth-of-type(odd) {
+  @media #{$tablet-only} {
     margin-right: 24px;
   }
 
-  .site-list__item {
+  @media #{$desktop} {
+    width: 184px;
+  }
+}
+
+.site-list__item {
+  @media #{tablet-only} {
     width: 143px;
   }
 }
 
-// desktop
-@media (min-width: 1150px) {
-  .site-list {
-    order: 1;
-    width: 430px;
-  }
-
-  .site-list__item:nth-of-type(odd) {
-    width: 184px;
-  }
-
-  .site-list__item:nth-of-type(even) {
+.site-list__item:nth-of-type(even) {
+  @media #{$desktop} {
     padding-left: 35px;
   }
+}
 
-  .site-list__item:first-of-type {
+.site-list__item:first-of-type {
+  @media #{$desktop} {
     border-right: 1px solid $border-gray;
   }
+}
 
-  .site-list__link {
-    font-size: 17px;
-    padding-top: 30px;
-    padding-bottom: 35px;
-  }
-
-  .site-list__item--new,
-  .site-list__item--sale {
-    display: block;
-  }
-
-  .site-list__item:nth-of-type(n+3) a {
+.site-list__item:nth-of-type(n+3) a {
+  @media #{$desktop} {
     font-size: 15px;
     line-height: 24px;
     padding-bottom: 0;
     padding-top: 18px;
   }
 }
+

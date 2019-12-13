@@ -2,6 +2,15 @@
   position: relative;
   width: 260px;
   height: 160px;
+
+  @media #{$tablet} {
+    width: 668px;
+    height: 455px;
+  }
+
+  @media #{$desktop} {
+    width: 682px;
+  }
 }
 
 .video-player__toogle {
@@ -40,17 +49,3 @@
   box-shadow: 0 3px 5px 0 rgba($black, 0.1);
 }
 
-// tablet
-@media (min-width: 768px) {
-  .video-player {
-    width: 668px;
-    height: 455px;
-  }
-}
-
-// desktop
-@media (min-width: 1150px) {
-  .video-player {
-    width: 682px;
-  }
-}

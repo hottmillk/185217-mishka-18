@@ -1,10 +1,29 @@
 .about-us {
   margin-bottom: 55px;
+
+  @media #{$tablet} {
+    margin-bottom: 60px;
+  }
+
+  @media #{$desktop} {
+    margin-bottom: 68px;
+  }
 }
 
 .about-us__wrapper {
   width: 260px;
   margin: 0 auto;
+
+  @media #{$tablet} {
+    width: 668px;
+  }
+
+  @media #{$desktop} {
+    box-sizing: border-box;
+    width: 1050px;
+    padding-right: 0;
+    padding-left: 175px;
+  }
 }
 
 .about-us__title {
@@ -14,11 +33,33 @@
   line-height: 30px;
   color: $titles-color;
   margin-bottom: 2px;
+
+  @media #{$tablet} {
+    font-size: 43px;
+    line-height: 50px;
+    padding-top: 10px;
+    margin-bottom: 18px;
+  }
+
+  @media #{$desktop} {
+    font-size: 53px;
+    line-height: 57px;
+    padding-top: 20px;
+  }
 }
 
 .about-us__list {
   display: flex;
   flex-direction: column;
+
+  @media #{$tablet} {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media #{$desktop} {
+    width: 700px;
+  }
 }
 
 .about-us__item {
@@ -27,6 +68,13 @@
   font-weight: 700;
   line-height: 20px;
   padding-top: 83px;
+
+  @media #{$tablet} {
+    width: 50%;
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 25px;
+  }
 }
 
 .about-us__icon {
@@ -39,12 +87,20 @@
   height: 37px;
   top: 29px;
   left: 8px;
+
+  @media #{$tablet} {
+    order: 1;
+  }
 }
 
 .about-us__icon-scandinavian {
   width: 47px;
   height: 27px;
   top: 30px;
+
+  @media #{$tablet} {
+    order: 3;
+  }
 }
 
 .about-us__icon-likes {
@@ -52,6 +108,10 @@
   height: 27px;
   top: 35px;
   left: 8px;
+
+  @media #{$tablet} {
+    order: 5;
+  }
 }
 
 .about-us__icon-hands {
@@ -59,6 +119,10 @@
   height: 34px;
   top: 30px;
   left: 3px;
+
+  @media #{$tablet} {
+    order: 2;
+  }
 }
 
 .about-us__icon-support {
@@ -66,88 +130,19 @@
   height: 23px;
   top: 30px;
   left: -7px;
+
+  @media #{$tablet} {
+    order: 4;
+  }
 }
 
 .about-us__icon-pack {
   width: 33px;
   height: 32px;
   top: 32px;
-}
 
-// tablet
-@media (min-width: 768px) {
-  .about-us {
-    margin-bottom: 60px;
-  }
-
-  .about-us__wrapper {
-    width: 668px;
-  }
-
-  .about-us__title {
-    font-size: 43px;
-    line-height: 50px;
-    padding-top: 10px;
-    margin-bottom: 18px;
-  }
-
-  .about-us__list {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .about-us__item {
-    width: 50%;
-    font-size: 20px;
-    line-height: 22px;
-    margin-bottom: 25px;
-  }
-
-  .about-us--eco {
-    order: 1;
-  }
-
-  .about-us--hands {
-    order: 2;
-  }
-
-  .about-us--scandinavian {
-    order: 3;
-  }
-
-  .about-us--support {
-    order: 4;
-  }
-
-  .about-us--likes {
-    order: 5;
-  }
-
-  .about-us--pack {
+  @media #{$tablet} {
     order: 6;
   }
 }
 
-// desktop
-@media (min-width: 1150px) {
-  .about-us {
-    margin-bottom: 68px;
-  }
-
-  .about-us__wrapper {
-    box-sizing: border-box;
-    width: 1050px;
-    padding-right: 0;
-    padding-left: 175px;
-  }
-
-  .about-us__title {
-    font-size: 53px;
-    line-height: 57px;
-    padding-top: 20px;
-  }
-
-  .about-us__list {
-    width: 700px;
-  }
-}

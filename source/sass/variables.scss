@@ -1,29 +1,42 @@
-$dark-gray:       #444444; //основной текст, текст кнопок, никнейм, цена хита
-$light-gray:      #f1f1f1; // header, footer
-$border-gray:     #ececec;
-$border-dark-gray:#c7c7c7;
-$black:           #000000; // titles, links, labels
-$white:           #ffffff; // categories index
-$green:           #63d1bb; // main colors, icons
-$secondary-green: #56c3b2; // secondary color
-$link-green:      #46c1ae; // links color hover
-$icon-green:      #149080; // big icons color
+$dark-gray:             #444444; //основной текст, текст кнопок, никнейм, цена хита
+$light-gray:            #f1f1f1; // header, footer
+$border-gray:           #ececec;
+$border-dark-gray:      #c7c7c7;
+$black:                 #000000; // titles, links, labels
+$white:                 #ffffff; // categories index
+$green:                 #63d1bb; // main colors, icons
+$secondary-green:       #56c3b2; // secondary color
+$link-green:            #46c1ae; // links color hover
+$icon-green:            #149080; // big icons color
 
-$text-color: $dark-gray;
-$titles-color: $black;
+$text-color:              $dark-gray;
+$titles-color:            $black;
 
-$button-color: $dark-gray;
-$button-color--hover: $white;
-$button-color--active: rgba($white, 0.3);
+$button-color:            $dark-gray;
+$button-color--hover:     $white;
+$button-color--active:    rgba($white, 0.3);
 
-$button-bg-color: $white;
-$button-bg-color--hover: $dark-gray;
+$button-bg-color:         $white;
+$button-bg-color--hover:  $dark-gray;
 $button-bg-color--active: $dark-gray;
-$button-border: $dark-gray;
+$button-border:           $dark-gray;
 
-$link-color: $black;
-$link-color--hover: rgba($black, 0.6);
-$link-color--active: rgba($black, 0.3);
+$link-color:              $black;
+$link-color--hover:       rgba($black, 0.6);
+$link-color--active:      rgba($black, 0.3);
 
-$font-family: "Open Sans", "Arial", sans-serif;
-$font-size: 15px;
+$font-family:             "Open Sans", "Arial", sans-serif;
+$font-size:               15px;
+
+$mobile-width:            320px;
+$tablet-width:            768px;
+$desktop-width:           1150px;
+
+$mobile-only:             "(max-width: 767px)";
+$tablet-only:             "(min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px})";
+$tablet:                  "(min-width: #{$tablet-width})";
+$desktop-except:          "(max-width: #{$desktop-width} - 1px)";
+$desktop:                 "(min-width: #{$desktop-width})";
+
+$retina-dpi:              144dpi;
+$retina-dppx:             1.5dppx;
