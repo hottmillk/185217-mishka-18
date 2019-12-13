@@ -87,20 +87,12 @@
   height: 37px;
   top: 29px;
   left: 8px;
-
-  @media #{$tablet} {
-    order: 1;
-  }
 }
 
 .about-us__icon-scandinavian {
   width: 47px;
   height: 27px;
   top: 30px;
-
-  @media #{$tablet} {
-    order: 3;
-  }
 }
 
 .about-us__icon-likes {
@@ -108,10 +100,6 @@
   height: 27px;
   top: 35px;
   left: 8px;
-
-  @media #{$tablet} {
-    order: 5;
-  }
 }
 
 .about-us__icon-hands {
@@ -119,10 +107,6 @@
   height: 34px;
   top: 30px;
   left: 3px;
-
-  @media #{$tablet} {
-    order: 2;
-  }
 }
 
 .about-us__icon-support {
@@ -130,17 +114,45 @@
   height: 23px;
   top: 30px;
   left: -7px;
-
-  @media #{$tablet} {
-    order: 4;
-  }
 }
 
 .about-us__icon-pack {
   width: 33px;
   height: 32px;
   top: 32px;
+}
 
+.about-us__item--eco {
+  @media #{$tablet} {
+    order: 1;
+  }
+}
+
+.about-us__item--hands {
+  @media #{$tablet} {
+    order: 2;
+  }
+}
+
+.about-us__item--scandinavian {
+  @media #{$tablet} {
+    order: 3;
+  }
+}
+
+.about-us__item--support {
+  @media #{$tablet} {
+    order: 4;
+  }
+}
+
+.about-us__item--likes {
+  @media #{$tablet} {
+    order: 5;
+  }
+}
+
+.about-us__item--pack {
   @media #{$tablet} {
     order: 6;
   }
