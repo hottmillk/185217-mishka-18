@@ -1,11 +1,12 @@
 .overlay {
+  display: none;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 20;
   height: 100vh;
-  background-color: rgba($color: #ffffff, $alpha: 0.9);
+  background-color: rgba($white, 0.9);
 }
 
 .overlay--show {

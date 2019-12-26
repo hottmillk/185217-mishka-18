@@ -9,7 +9,7 @@
   font-size: 19px;
   font-weight: 700;
   line-height: 18px;
-  color: #000000;
+  color: $black;
 }
 
 .copyright__link,
@@ -18,15 +18,15 @@
 }
 
 .copyright__icon {
-  fill: #63d1bb;
+  fill: $green;
 }
 
 .copyright__link:hover .copyright__icon {
-  fill: #46c1ae;
+  fill: $link-green;
 }
 
 .copyright__link:active {
-  color: rgba($color: #000000, $alpha: 0.3);
+  color: $link-color--active;
 }
 
 .copyright__link:active .copyright__icon {
