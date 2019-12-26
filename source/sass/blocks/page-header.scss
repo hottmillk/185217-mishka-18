@@ -53,7 +53,8 @@
   margin: 70px auto 40px;
   font-size: 26.5px;
   font-weight: 700;
-  line-height: 29.5px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
   text-align: center;
 
   @media #{$tablet} {
@@ -90,8 +91,9 @@
 .page-header__category {
   position: relative;
   padding-top: 25px;
-  padding-bottom: 29px;
-  padding-left: 30px;
+  padding-bottom: 30px;
+  padding-left: 29px;
+  text-decoration: none;
   font-size: 19px;
   line-height: 24px;
   color: $white;
@@ -130,6 +132,10 @@
   transition: opacity 0.3s ease;
 }
 
+.page-header__icon--interior {
+  top: 23px;
+}
+
 .page-header__category:hover .page-header__icon {
   opacity: 0.7;
 }
@@ -143,6 +149,8 @@
 }
 
 .page-header__title--main {
+  margin-bottom: 122px;
+
   @media #{$tablet} {
     margin-top: 153px;
   }

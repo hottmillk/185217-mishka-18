@@ -32,6 +32,7 @@
   transition-duration: 0.3s;
   transition-timing-function: ease;
   border-top: 1px solid $border-gray;
+  text-decoration: none;
 
   @media #{$tablet} {
     border-top: 0;

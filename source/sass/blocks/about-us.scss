@@ -11,7 +11,7 @@
 }
 
 .about-us__wrapper {
-  width: 260px;
+  width: 265px;
   margin: 0 auto;
 
   @media #{$tablet} {
@@ -27,12 +27,14 @@
 }
 
 .about-us__title {
-  padding-top: 28px;
+  padding-top: 27px;
+  padding-left: 0;
   font-size: 25px;
   font-weight: 700;
   line-height: 30px;
   color: $titles-color;
-  margin-bottom: 2px;
+  margin-top: 0;
+  margin-bottom: 0;
 
   @media #{$tablet} {
     font-size: 43px;
@@ -51,6 +53,9 @@
 .about-us__list {
   display: flex;
   flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
 
   @media #{$tablet} {
     flex-direction: row;
@@ -68,6 +73,7 @@
   font-weight: 700;
   line-height: 20px;
   padding-top: 83px;
+  padding-left: 2px;
 
   @media #{$tablet} {
     width: 50%;
@@ -75,6 +81,10 @@
     line-height: 22px;
     margin-bottom: 25px;
   }
+}
+
+.about-us__item:first-child {
+  padding-top: 86px;
 }
 
 .about-us__icon {
@@ -85,41 +95,43 @@
 .about-us__icon-eco {
   width: 32px;
   height: 37px;
-  top: 29px;
-  left: 8px;
+  top: 32px;
+  left: 10px;
 }
 
 .about-us__icon-scandinavian {
   width: 47px;
   height: 27px;
-  top: 30px;
+  top: 32px;
+  left: 2px;
 }
 
 .about-us__icon-likes {
-  width: 34px;
-  height: 27px;
-  top: 35px;
-  left: 8px;
+  width: 35px;
+  height: 28px;
+  top: 36px;
+  left: 9px;
 }
 
 .about-us__icon-hands {
   width: 35px;
   height: 34px;
-  top: 30px;
-  left: 3px;
+  top: 32px;
+  left: 5px;
 }
 
 .about-us__icon-support {
   width: 55px;
   height: 23px;
-  top: 30px;
-  left: -7px;
+  top: 32px;
+  left: -4px;
 }
 
 .about-us__icon-pack {
   width: 33px;
   height: 32px;
-  top: 32px;
+  top: 29px;
+  left: 5px;
 }
 
 .about-us__item--eco {

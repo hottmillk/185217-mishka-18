@@ -30,6 +30,7 @@
   display: block;
   margin-top: 22px;
   margin-bottom: 22px;
+  margin-right: 2px;
   transition: opacity 0.3s ease-in;
 
   @media #{$tablet} {
@@ -51,7 +52,7 @@
   content: "";
   display: block;
   position: absolute;
-  top: 7px;
+  top: 5px;
   right: 29px;
   width: 24px;
   height: 24px;
