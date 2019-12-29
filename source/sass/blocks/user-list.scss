@@ -36,8 +36,8 @@
 
   @media #{$tablet} {
     border-top: 0;
-    padding-top: 30px;
-    padding-bottom: 35px;
+    padding-top: 31px;
+    padding-bottom: 33px;
     background-color: transparent;
   }
 }
@@ -58,11 +58,21 @@
 .user-list__icon-search {
   width: 18px;
   height: 18px;
+
+  @media #{$tablet} {
+    top: 36px;
+    left: 35px;
+  }
 }
 
 .user-list__icon-basket {
   width: 21px;
   height: 18px;
+
+  @media #{$tablet} {
+    top: 35px;
+    left: 31px;
+  }
 }
 
 .user-list__link--delivery {

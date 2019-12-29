@@ -1,12 +1,12 @@
 .production {
-  margin-bottom: 60px;
+  margin-bottom: 58px;
 
   @media #{$tablet} {
-    margin-bottom: 65px;
+    margin-bottom: 61px;
   }
 
   @media #{$desktop} {
-    margin-bottom: 105px;
+    margin-bottom: 102px;
   }
 }
 
@@ -31,6 +31,7 @@
 }
 
 .production__title {
+  margin: 0;
   position: relative;
   font-size: 17px;
   color: $titles-color;
@@ -45,13 +46,14 @@
     font-size: 20px;
     padding-left: 108px;
     margin-bottom: 7px;
+    padding-top: 22px;
   }
 
   @media #{$desktop} {
     order: -1;
     box-sizing: border-box;
     width: 350px;
-    padding-top: 94px;
+    padding-top: 98px;
     padding-left: 60px;
     padding-right: 60px;
     margin-left: 700px;
@@ -67,7 +69,7 @@
   fill: $green;
 
   @media #{$tablet} {
-    top: 20px;
+    top: 17px;
     left: 42px;
   }
 
@@ -78,7 +80,7 @@
 }
 
 .production__video {
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 
   @media #{$tablet} {
     order: -1;
@@ -87,7 +89,7 @@
 
   @media #{$desktop} {
     margin-bottom: 0;
-    margin-top: -175px;
+    margin-top: -180px;
   }
 }
 
@@ -131,7 +133,7 @@
   }
 
   @media #{$desktop} {
-    margin-bottom: 48px;
+    margin-bottom: 46px;
   }
 }
 

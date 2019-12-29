@@ -43,7 +43,6 @@
 
   @media #{$desktop} {
     background-image: url("../img/hero-desktop@1x.jpg");
-    background-size: 1250px 746px;
     min-height: 746px;
   }
 }
@@ -61,7 +60,9 @@
     font-size: 43px;
     line-height: 50px;
     width: 668px;
-    margin-top: 90px;
+    margin-top: 95px;
+    margin-bottom: 80px;
+    letter-spacing: 0;
   }
 
   @media #{$desktop} {
@@ -134,6 +135,17 @@
 
 .page-header__icon--interior {
   top: 23px;
+
+  @media #{$tablet} {
+    top: 30px;
+  }
+}
+
+.page-header__icon--toys {
+  @media #{$tablet} {
+    top: 31px;
+    right: 33px;
+  }
 }
 
 .page-header__category:hover .page-header__icon {

@@ -49,6 +49,7 @@
 }
 
 .item__title {
+  margin: 0;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
@@ -63,17 +64,28 @@
   display: block;
   color: $titles-color;
   padding-top: 27px;
-  padding-bottom: 7px;
+  padding-bottom: 5px;
+  padding-left: 1px;
   transition: color 0.3s ease;
+  text-decoration: none;
+
+  @media #{$tablet} {
+    padding-top: 26px;
+    padding-left: 0;
+  }
 }
 
 .item__parameters {
   font-size: 13px;
   line-height: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 
   @media #{$tablet} {
     font-size: 15px;
+  }
+
+  @media #{$desktop} {
+    margin-bottom: 13px;
   }
 }
 
@@ -84,6 +96,10 @@
   border-top: 1px solid $border-gray;
   min-height: 65px;
   margin-top: auto;
+
+  @media #{$tablet} {
+    min-height: 68px;
+  }
 }
 
 .item__price {
@@ -97,7 +113,7 @@
   }
 
   @media #{$tablet-only} {
-    padding-left: 3px;
+    padding-left: 5px;
   }
 }
 

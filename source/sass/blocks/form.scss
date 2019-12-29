@@ -2,8 +2,8 @@
   padding-bottom: 10px;
 
   @media #{$tablet} {
-    padding-top: 50px;
-    padding-bottom: 30px;
+    padding-top: 52px;
+    padding-bottom: 25px;
   }
 }
 
@@ -20,11 +20,13 @@
   display: flex;
   flex-grow: 0;
   margin-bottom: 24px;
+  margin-top: 0;
   color: $green;
   font-size: 17px;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 16px;
+
 
   @media #{$tablet} {
     display: block;
@@ -51,6 +53,10 @@
 }
 
 .form__fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+
   @media #{$tablet} {
     width: 668px;
     margin: 0 auto;
@@ -85,13 +91,13 @@
   position: relative;
   box-sizing: border-box;
   min-height: 38px;
-  padding-top: 12px;
-  padding-left: 62px;
+  padding-top: 11px;
+  padding-left: 63px;
 
   @media #{$tablet} {
     min-height: 52px;
-    padding-top: 10px;
-    padding-left: 80px;
+    padding-top: 14px;
+    padding-left: 81px;
     margin-bottom: 22px;
   }
 }
@@ -102,17 +108,20 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 37px;
-  height: 37px;
+  width: 40px;
+  height: 39px;
   border: 2px solid $text-color;
   transition: border-color 0.3s ease;
   cursor: pointer;
+  box-sizing: border-box;
 
   @media #{$tablet} {
-    width: 50px;
-    height: 50px;
+    width: 52px;
+    height: 52px;
+    top: -3px;
   }
 }
+
 
 .form__checkbox-label {
   margin-bottom: 23px;
@@ -123,6 +132,7 @@
 
   @media #{$desktop} {
     width: 262px;
+    padding-top: 10px;
   }
 }
 
@@ -133,7 +143,11 @@
 }
 
 .form__radio-label {
-  margin-bottom: 12px;
+  margin-bottom: 13px;
+
+  @media #{$tablet} {
+    margin-bottom: 24px;
+  }
 }
 
 .form__radio-label::before {
@@ -153,8 +167,7 @@
   transition: opacity 0.3s ease;
 
   @media #{$tablet} {
-    top: 16px;
-    left: 16px;
+    left: 15px;
     width: 22px;
     height: 22px;
   }
@@ -182,7 +195,7 @@
 .form__checkbox-label::after {
   content: "";
   position: absolute;
-  top: 12px;
+  top: 13px;
   left: 10px;
   width: 18px;
   height: 8px;
@@ -194,15 +207,23 @@
   transform: rotate(-45deg);
 
   @media #{$tablet} {
-    left: 16px;
+    left: 12px;
     width: 28px;
     height: 13px;
     border-width: 3px;
   }
+
+  @media #{$tablet} {
+    top: 9px;
+  }
 }
 
 .form__radio-label:last-of-type {
-  margin-bottom: 22px;
+  margin-bottom: 24px;
+}
+
+.form__checkbox-label:last-of-type {
+  margin-bottom: 24px;
 }
 
 .form__field-wrapper {
@@ -247,15 +268,19 @@
     padding-top: 13px;
     margin-right: 25px;
   }
+
+  @media #{$desktop} {
+    padding-top: 10px;
+    padding-left: 2px;
+  }
 }
 
 .form__field {
   font-size: 17px;
   line-height: 18px;
   box-sizing: border-box;
-  padding-top: 5px;
-  padding-right: 46px;
-  padding-bottom: 7px;
+  padding-top: 15px;
+  padding-bottom: 12px;
   margin-bottom: 25px;
   background-color: transparent;
   border: 0;
@@ -266,18 +291,37 @@
     font-size: 19px;
     line-height: 18px;
     width: 100%;
-    padding-right: 60px;
     padding-left: 16px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
   }
 
   @media #{$desktop} {
     width: 700px;
-    padding-right: 46px;
+    padding-bottom: 14px;
   }
+}
+
+.form__field--phone {
+  margin-bottom: 34px;
+
+  @media #{$tablet} {
+    margin-bottom: 27px;
+  }
+
+  @media #{$desktop} {
+    margin-bottom: 30px;
+  }
+}
+
+.form__field--email {
+  padding-bottom: 15px;
 }
 
 .form__field::placeholder {
   color: rgba(68, 68, 68, 0.3);
+  letter-spacing: 0.3px;
 }
 
 .form__title--phone,
@@ -305,28 +349,40 @@
 
 .form__icon {
   position: absolute;
-  top: 0;
-  right: 5px;
   fill: #c1c1c1;
   transition: fill 0.3s ease;
-
-  @media #{$tablet} {
-    right: 23px;
-  }
-
-  @media #{$desktop} {
-    right: 3px;
-  }
 }
 
 .form__icon--phone {
   width: 25px;
   height: 25px;
+  top: 7px;
+  right: 10px;
+
+  @media #{$tablet} {
+    right: 25px;
+  }
+
+  @media #{$desktop} {
+    right: 9px;
+    top: 8px;
+  }
 }
 
 .form__icon--email {
   width: 32px;
   height: 32px;
+  top: 9px;
+  right: 6px;
+
+  @media #{$tablet} {
+    right: 21px;
+  }
+
+  @media #{$desktop} {
+    right: 4px;
+    top: 7px;
+  }
 }
 
 .form__textarea {
@@ -355,6 +411,8 @@
 }
 
 .form__note {
+  display: block;
+  margin-top: 6px;
   font-size: 14px;
   line-height: 16px;
 
@@ -363,12 +421,13 @@
     line-height: 30px;
     padding-bottom: 5px;
     margin-left: 40px;
+    margin-top: 0;
   }
 }
 
 .form__send {
   width: 100%;
-  margin-top: 30px;
+  margin-top: 31px;
 
   @media #{$tablet} {
     flex-shrink: 0;
@@ -402,17 +461,17 @@
     align-items: center;
     justify-content: space-between;
     width: 668px;
-    margin: 25px auto 0;
+    margin: 28px auto 0;
   }
 
   @media #{$desktop} {
     width: 700px;
-    margin: 20px auto 0;
+    margin: 25px auto 0;
   }
 }
 
 .form__title--name {
   @media #{$mobile-only} {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
 }
